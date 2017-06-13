@@ -2,35 +2,9 @@
 			// Клик на элемент по которому и будет совершаться 
 			// действие открытие и закрытие sidebar
 			$('#nav-btn').click(function(e) {
-				// Класс sidebar
-				var sidebar = $('.content__sidebar');
-				// Ширина sidebar
-				var sidebarWidth = $('.content__sidebar').width();
-				// Добавляем класс active
-				$('.main-content, .content__main').addClass('active');
-
-				// Проверяем, если в sidebar свойство left не равна ширины его то выполняються 
-				// следующие действия
-				if (sidebar.css('left') != sidebarWidth) {
-					// Добавляем ему класс active
-					sidebar.addClass('active');
-
-					var firstClick = true;
-
-					// Скрипт который будет закрывать sidebar при клике на любое место
-					$(document).bind('click.myEvent', function(e) {
-						if (!firstClick && $(e.target).closest('.content__sidebar').length == 0) {
-							// Удаляем класс active
-							sidebar.removeClass('active');
-							// Удаляем класс active
-							$('.main-content, .content__main').removeClass('active');
-							$(document).unbind('click.myEvent');
-							$('#nav-btn').removeClass('active');
-						}
-						firstClick = false;
-					});
-				}
-				e.preventDefault();
+				$('.content__sidebar').toggleClass('active');
+				$('.main-content').toggleClass('active');
+				
 			});
 
 		});
