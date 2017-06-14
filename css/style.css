@@ -67,7 +67,7 @@ table {
 
 
 
-/* HEADER */
+/* MAIN-CONTENT */
 
 .main-content {
 	height: 100%;
@@ -102,6 +102,18 @@ table {
 	
 }
 
+.content-top {
+	height: 115px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
 .logo {
 	font-size: 16px;
 	line-height: 19px;
@@ -119,6 +131,17 @@ table {
 	color: #fff;
 	text-shadow: -3px 2px 5px black;
 }
+
+
+.top-menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
 
 /* BTN */
 
@@ -256,15 +279,5 @@ table {
 
 /* CONTENT__MAIN */
 
-.content__main {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 33px 5px;
-	-webkit-transition: left 0.5s ease-out 0.2s;
-	-moz-transition: left 0.5s ease-out 0.2s;
-	-o-transition: left 0.5s ease-out 0.2s;
-	transition: left 0.5s ease-out 0.2s;
-}
+
 
