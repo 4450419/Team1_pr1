@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	min-width: 192px;
-	font-family: Tahoma;
+	font-family: Helvetica;
 }
 ol, ul {
 	list-style: none;
@@ -104,6 +104,7 @@ table {
 
 .content-top {
 	height: 115px;
+	background: #fff;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -140,7 +141,30 @@ table {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	font-size: 18px;
 }
+
+.activity a {
+	color: #95a0aa;
+}
+
+.notifications a {
+	color: #95a0aa; 
+}
+
+.notifications {
+	position: relative;
+}
+
+.notifications:after {
+	content: "18";
+	display: block;
+	border-radius: 50%;
+	width: 18px;
+	height: 19px;
+	background: #f86b4f;
+}
+
 
 
 /* BTN */
