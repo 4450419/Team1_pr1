@@ -70,16 +70,17 @@ table {
 /* MAIN-CONTENT */
 
 .main-content {
+	position: relative;
 	height: 100%;
-	width: 100%;
-	z-index: 9999;
-	background: #eeeeee;
+	width: 97%;
+	left:3%;
+	background: #fff;
 	border: 1px solid #5d5d5d;
 	transition: all 0.5s ease-out 0.2s;
 }
 
 .main-content.active {
-	margin-left: 20%;
+	margin-left: 00%;
 	width: 80%;
 }
 
@@ -88,7 +89,7 @@ table {
 }
 
 .main-content .wrapper {
-	padding: 10px 20px 10px 65px;
+	padding: 10px 20px 10px 30px;
 	margin:0 auto;
 	max-width: 100%;
 	display: -webkit-flex;
@@ -111,6 +112,7 @@ table {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 100%;
 }
 
@@ -144,24 +146,46 @@ table {
 	font-size: 18px;
 }
 
+
+.activity {
+	margin-left: 35px;
+}
 .activity a {
 	color: #95a0aa;
+	text-decoration: none;
+}
+
+.activity a:hover {
+	text-decoration: underline;
 }
 
 .notifications a {
 	color: #95a0aa; 
+	text-decoration: none;
+}
+
+.notifications a:hover {
+	text-decoration: underline;
 }
 
 .notifications {
+	margin-left: 50px;
 	position: relative;
 }
 
 .notifications:after {
 	content: "18";
+	position: absolute;
+	top: -14px;
+	right: -10px;
+	text-align: center;
+	line-height: 18px;
 	display: block;
+	font-size: 10px;
+	color: #fff;
 	border-radius: 50%;
 	width: 18px;
-	height: 19px;
+	height: 18px;
 	background: #f86b4f;
 }
 
@@ -172,7 +196,7 @@ table {
 #nav-btn {
  position: absolute;
  cursor: pointer;
- top: 25px;
+ top: 40px;
  border-radius: 5px;
  right: -20px;
  display: inline-block;
