@@ -189,6 +189,54 @@ table {
 	background: #f86b4f;
 }
 
+.user {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.root-hexagon {
+ background: url(../img/user.png) no-repeat center center;
+ border-radius: 5px;
+ right: -210px;
+ display: inline-block;
+ width: 41px; 
+ height: 22.75px;
+
+ margin: 14.88px 0;
+}
+
+.root-hexagon:before,
+.root-hexagon:after {
+ content: "";
+ position: absolute;
+ width: 0;
+ border-left: 20.5px solid transparent;
+ border-right: 20.5px solid transparent;
+}
+
+.root-hexagon:before {
+ top: 36px;
+ border-radius: 15px;
+ bottom: 93%;
+ border-bottom: 16.88px solid #64C7CC;
+}
+
+.root-hexagon:after {
+ border-radius: 15px;
+ top: 83px;
+ width: 0;
+ border-top: 15.88px solid #64C7CC;
+}
+
+.cusel {
+	margin-left: 10px;
+}
 
 
 /* BTN */
@@ -280,8 +328,6 @@ table {
 	top: 35px;
 	left: -18px;
 }
-
-
 
 .divide {
 	display: block;
