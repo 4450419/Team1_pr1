@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	cursor: pointer;
+}
+
 
 .page {
 	position: relative;
@@ -372,7 +376,7 @@ table {
 .content__sidebar.active {left: 0;}
 
 .left-menu-logo{
-  margin-left: 30px;
+  margin-left: 40px;
   margin-top: 45px;
   width: 190px;
 }
