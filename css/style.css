@@ -381,7 +381,19 @@ table {
 	width: 24px;
 }
 
+.menu-list {
+  margin-top: 40px;
+  padding: 0;
+  font-weight: 600;
+}
 
+.menu-list-item {
+  position: relative;
+  font-size: 20px;
+  color: #98a2ad;
+  line-height: 90px;
+  list-style: none;
+}
 /* CONTENT__MAIN */
 
 
