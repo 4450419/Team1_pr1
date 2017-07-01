@@ -61,7 +61,7 @@ a {
 
 .main-content.active,
 .content__main.active {
-	left: 20%;
+	left: 23%;
 } 
 
 .main-content.active .wrapper {
@@ -76,16 +76,15 @@ a {
 .main-content {
 	position: relative;
 	height: 100%;
-	width: 97%;
-	left:3%;
+	width: 94%;
+	left:6%;
 	background: #fff;
 	border: 1px solid #5d5d5d;
 	transition: all 0.5s ease-out 0.2s;
 }
 
 .main-content.active {
-	margin-left: 00%;
-	width: 80%;
+	width: 77%;
 }
 
 .active-main {
@@ -104,7 +103,7 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	transition: all 1s;
-	
+	flex-direction: column;
 }
 
 .content-top {
@@ -241,6 +240,59 @@ a {
 .cusel {
 	margin-left: 10px;
 }
+
+
+
+
+/*Blue Box*/
+.box-menu{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 220px;
+	/*width:160px;*/
+	color:#fff;
+	width: 20%;
+}
+
+
+.box-item a { 
+	text-align: center;
+	text-decoration: none;
+}
+
+.box-item a img{
+	width: 55px;
+	height: 55px;
+}
+
+
+.box-item h3{
+	font-size: 23px;
+	margin-top: 20px;
+	color:#fff;
+	font-weight: normal;
+}
+
+.box-item:first-child  {background-color: #5FAEE3;}
+
+.box-item:nth-child(2) {background-color:#6EB5E5;}
+
+.box-item:nth-child(3) {background-color: #7CBDE8;}
+
+.box-item:nth-child(4) {background-color: #8BC4EA;}
+
+.box-item:last-child {background-color: #99CBED;}
+
+
+/*Blue box ends*/
 
 
 /* BTN */
